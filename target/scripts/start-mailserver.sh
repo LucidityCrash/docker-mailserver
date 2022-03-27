@@ -57,6 +57,7 @@ function _register_functions
 
   _register_check_function '_check_hostname'
   _register_check_function '_check_log_level'
+  _register_check_function '_check_fetch_get_mail'
 
   # ? >> Setup
 
@@ -126,6 +127,11 @@ function _register_functions
   then
     _register_setup_function '_setup_fetchmail'
     [[ ${FETCHMAIL_PARALLEL} -eq 1 ]] && _register_setup_function '_setup_fetchmail_parallel'
+  fi
+
+  if [[ ${ENABLE_GETMAIL} -eq 1 ]]
+  then
+    _register_setup_function '_setup_getmail'
   fi
 
   if [[ ${ENABLE_SRS} -eq 1  ]]

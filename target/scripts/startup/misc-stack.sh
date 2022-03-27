@@ -34,6 +34,7 @@ function _misc_save_states
     [[ ${ENABLE_SPAMASSASSIN} -eq 1 ]] && FILES+=('lib/spamassassin')
     [[ ${ENABLE_POSTGREY} -eq 1 ]] && FILES+=('lib/postgrey')
     [[ ${SMTP_ONLY} -ne 1 ]] && FILES+=('lib/dovecot')
+    [[ ${ENABLE_GETMAIL} -eq 1 ]] && FILES+=('lib/getmail')
 
     for FILE in "${FILES[@]}"
     do

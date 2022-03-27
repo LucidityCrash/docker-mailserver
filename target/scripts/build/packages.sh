@@ -97,6 +97,14 @@ function _install_packages
     "${MAIL_PROGRAMS_PACKAGES[@]}"
 }
 
+function _install_getmail
+{
+  ARG GETMAIL_SID_DEB_URL=http://http.us.debian.org/debian/pool/main/g/getmail6/getmail6_6.18.9-1_all.deb
+  curl -Lkso getmail6.deb  ${GETMAIL_SID_DEB_URL} && \
+  dpkg -i getmail6.deb 2>&1 && \
+  rm getmail6.deb
+}
+
 function _post_installation_steps
 {
   _log 'debug' 'Running post-installation steps (cleanup)'
@@ -109,4 +117,5 @@ function _post_installation_steps
 _pre_installation_steps
 _install_postfix
 _install_packages
+_install_getmail
 _post_installation_steps
