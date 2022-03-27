@@ -66,6 +66,7 @@ VARS[ENABLE_CLAMAV]="${ENABLE_CLAMAV:=0}"
 VARS[ENABLE_DNSBL]="${ENABLE_DNSBL:=0}"
 VARS[ENABLE_FAIL2BAN]="${ENABLE_FAIL2BAN:=0}"
 VARS[ENABLE_FETCHMAIL]="${ENABLE_FETCHMAIL:=0}"
+VARS[ENABLE_GETMAIL]="${ENABLE_GETMAIL:=0}"
 VARS[ENABLE_LDAP]="${ENABLE_LDAP:=0}"
 VARS[ENABLE_MANAGESIEVE]="${ENABLE_MANAGESIEVE:=0}"
 VARS[ENABLE_POP3]="${ENABLE_POP3:=0}"
@@ -231,6 +232,11 @@ function _register_functions
     [[ ${FETCHMAIL_PARALLEL} -eq 1 ]] && _register_setup_function '_setup_fetchmail_parallel'
   fi
 
+  if [[ ${ENABLE_GETMAIL} -eq 1 ]]
+  then
+    _register_setup_function '_setup_getmail'
+  fi
+
   if [[ ${ENABLE_SRS} -eq 1  ]]
   then
     _register_setup_function '_setup_SRS'
@@ -281,6 +287,7 @@ function _register_functions
   [[ ${ENABLE_SASLAUTHD} -eq 1 ]] && _register_start_daemon '_start_daemon_saslauthd'
   [[ ${ENABLE_FAIL2BAN} -eq 1 ]] &&	_register_start_daemon '_start_daemon_fail2ban'
   [[ ${ENABLE_FETCHMAIL} -eq 1 ]] && _register_start_daemon '_start_daemon_fetchmail'
+  [[ ${ENABLE_GETMAIL} -eq 1 ]] && _register_start_daemon '_start_daemon_getmail'
   [[ ${ENABLE_CLAMAV} -eq 1 ]] &&	_register_start_daemon '_start_daemon_clamav'
   [[ ${ENABLE_LDAP} -eq 0 ]] && _register_start_daemon '_start_daemon_changedetector'
   [[ ${ENABLE_AMAVIS} -eq 1 ]] && _register_start_daemon '_start_daemon_amavis'

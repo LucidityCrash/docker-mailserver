@@ -1188,6 +1188,28 @@ EOF
   supervisorctl update
 }
 
+function _setup_getmail
+{
+  _log 'trace' 'Preparing Getmail configuration'
+
+  local CONFIGURATION GETMAILRC
+
+  CONFIGURATION='/tmp/docker-mailserver/getmail.cf'
+  GETMAILRC='/etc/getmailrc.d'
+
+  mkdir ${GETMAILRC}
+
+  if [[ -f ${CONFIGURATION} ]]
+  then
+    cat /etc/getmailrc_general "${CONFIGURATION}" >"${GETMAILRC}/getmailrc"
+  else
+    cat /etc/getmailrc_general >"${GETMAILRC}/getmailrc"
+  fi
+
+  chmod 600 "${GETMAILRC}"
+  chown root:root "${GETMAILRC}"
+}
+
 function _setup_timezone
 {
   _log 'debug' "Setting timezone to '${TZ}'"
