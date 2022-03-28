@@ -1,9 +1,8 @@
 #! /bin/bash
 while true; do
-    if ! pgrep -x "getmail" > /dev/null
-    then 
+    for file in /etc/getmailrc.d/getmailrc*; do
         #/usr/bin/getmail --getmaildir /etc/getmailrc.d --rcfile getmailrc.file
-        /usr/bin/getmail --getmaildir /var/lib/getmail --rcfile /etc/getmailrc.d/getmailrc
+        /usr/bin/getmail --getmaildir /var/lib/getmail --rcfile $file
         sleep 300
-    fi
+    done
 done
