@@ -1207,7 +1207,7 @@ function _setup_getmail
     then
       USER=$(echo $FILE | cut -d'-' -f 3| cut -d'.' -f1)
       sed "s/PLACEHOLDER/$USER/g" /etc/getmailrc_general > $GETMAILRC/getmailrc-$USER.tmp
-      cat $GETMAILRC/getmailrc-$USER.tmp $FILE >> $GETMAILRC/getmailrc-$USER
+      cat $GETMAILRC/getmailrc-$USER.tmp $FILE > $GETMAILRC/getmailrc-$USER
       rm $GETMAILRC/getmailrc-$USER.tmp
     else
       cat /etc/getmailrc_general >"$GETMAILRC/getmailrc"
