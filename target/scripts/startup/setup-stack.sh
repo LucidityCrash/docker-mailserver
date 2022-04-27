@@ -1209,6 +1209,10 @@ function _setup_getmail
       sed "s/PLACEHOLDER/$USER/g" /etc/getmailrc_general > $GETMAILRC/getmailrc-$USER.tmp
       cat $GETMAILRC/getmailrc-$USER.tmp $FILE > $GETMAILRC/getmailrc-$USER
       rm $GETMAILRC/getmailrc-$USER.tmp
+      GETMAIL_POLL_MINS=$(($GETMAIL_POLL/60))
+      cat >"/etc/cron.d/getmail-${USER}" << EOF
+*/${GETMAIL_POLL_MINS} * * * * root /usr/bin/getmail --getmaildir /var/lib/getmail --rcfile ${GETMAILRC}/getmailrc-${USER}
+EOF
     else
       cat /etc/getmailrc_general >"$GETMAILRC/getmailrc"
     fi

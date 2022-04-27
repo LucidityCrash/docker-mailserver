@@ -181,6 +181,7 @@ function _register_functions
 
   _register_check_function '_check_hostname'
   _register_check_function '_check_log_level'
+  _register_check_function '_check_fetch_get_mail'
 
   # ? >> Setup
 
@@ -287,7 +288,6 @@ function _register_functions
   [[ ${ENABLE_SASLAUTHD} -eq 1 ]] && _register_start_daemon '_start_daemon_saslauthd'
   [[ ${ENABLE_FAIL2BAN} -eq 1 ]] &&	_register_start_daemon '_start_daemon_fail2ban'
   [[ ${ENABLE_FETCHMAIL} -eq 1 ]] && _register_start_daemon '_start_daemon_fetchmail'
-  [[ ${ENABLE_GETMAIL} -eq 1 ]] && _register_start_daemon '_start_daemon_getmail'
   [[ ${ENABLE_CLAMAV} -eq 1 ]] &&	_register_start_daemon '_start_daemon_clamav'
   [[ ${ENABLE_LDAP} -eq 0 ]] && _register_start_daemon '_start_daemon_changedetector'
   [[ ${ENABLE_AMAVIS} -eq 1 ]] && _register_start_daemon '_start_daemon_amavis'

@@ -84,11 +84,3 @@ function _start_daemon_fetchmail
     _default_start_daemon 'fetchmail'
   fi
 }
-
-function _start_daemon_getmail
-{
-  if [[ ${ENABLE_GETMAIL} -eq 1 ]]
-  then
-    _default_start_daemon 'getmail'
-  fi
-}
