@@ -9,7 +9,7 @@ ARG FAIL2BAN_DEB_ASC_URL=${FAIL2BAN_DEB_URL}.asc
 ARG FAIL2BAN_GPG_PUBLIC_KEY_ID=0x683BF1BEBD0A882C
 ARG FAIL2BAN_GPG_PUBLIC_KEY_SERVER=hkps://keyserver.ubuntu.com
 ARG FAIL2BAN_GPG_FINGERPRINT="8738 559E 26F6 71DF 9E2C  6D9E 683B F1BE BD0A 882C"
-ARG GETMAIL_SID_DEB_URL=http://http.us.debian.org/debian/pool/main/g/getmail6/getmail6_6.18.4-2_all.deb
+ARG GETMAIL_SID_DEB_URL=http://http.us.debian.org/debian/pool/main/g/getmail6/getmail6_6.18.9-1_all.deb
 
 LABEL org.opencontainers.image.version=${VCS_VER}
 LABEL org.opencontainers.image.revision=${VCS_REF}
