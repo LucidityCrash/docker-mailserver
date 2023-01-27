@@ -676,6 +676,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security/rspamd/" class="md-nav__link">
+        Rspamd
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1351,6 +1365,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../contributing/tests/" class="md-nav__link">
+        Tests
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../contributing/issues-and-pull-requests/" class="md-nav__link">
         Issues and Pull Requests
       </a>
@@ -1443,7 +1471,7 @@
 /tmp/docker-data/dms/config $ nano user-patches.sh
 </code></pre></div>
 <p>The contents could look like this:</p>
-<div class="highlight"><pre><span></span><code><span class="ch">#! /bin/bash</span>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
 
 cat &gt;/etc/amavis/conf.d/50-user &lt;&lt; <span class="s2">&quot;END&quot;</span>
 use strict<span class="p">;</span>

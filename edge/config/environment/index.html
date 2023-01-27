@@ -535,6 +535,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#enable_rspamd" class="md-nav__link">
+    ENABLE_RSPAMD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#enable_amavis" class="md-nav__link">
     ENABLE_AMAVIS
   </a>
@@ -556,8 +563,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#enable_clamav" class="md-nav__link">
-    ENABLE_CLAMAV
+  <a href="#enable_opendkim" class="md-nav__link">
+    ENABLE_OPENDKIM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable_opendmarc" class="md-nav__link">
+    ENABLE_OPENDMARC
   </a>
   
 </li>
@@ -565,6 +579,13 @@
           <li class="md-nav__item">
   <a href="#enable_pop3" class="md-nav__link">
     ENABLE_POP3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable_clamav" class="md-nav__link">
+    ENABLE_CLAMAV
   </a>
   
 </li>
@@ -628,13 +649,6 @@
           <li class="md-nav__item">
   <a href="#virusmails_delete_delay" class="md-nav__link">
     VIRUSMAILS_DELETE_DELAY
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enable_postfix_virtual_transport" class="md-nav__link">
-    ENABLE_POSTFIX_VIRTUAL_TRANSPORT
   </a>
   
 </li>
@@ -1263,13 +1277,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sasl_passwd" class="md-nav__link">
-    SASL_PASSWD
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#saslauthd_ldap_auth_method" class="md-nav__link">
     SASLAUTHD_LDAP_AUTH_METHOD
   </a>
@@ -1625,6 +1632,20 @@
     <li class="md-nav__item">
       <a href="../security/mail_crypt/" class="md-nav__link">
         Mail Encryption
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security/rspamd/" class="md-nav__link">
+        Rspamd
       </a>
     </li>
   
@@ -2294,6 +2315,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../contributing/tests/" class="md-nav__link">
+        Tests
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../contributing/issues-and-pull-requests/" class="md-nav__link">
         Issues and Pull Requests
       </a>
@@ -2427,6 +2462,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#enable_rspamd" class="md-nav__link">
+    ENABLE_RSPAMD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#enable_amavis" class="md-nav__link">
     ENABLE_AMAVIS
   </a>
@@ -2448,8 +2490,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#enable_clamav" class="md-nav__link">
-    ENABLE_CLAMAV
+  <a href="#enable_opendkim" class="md-nav__link">
+    ENABLE_OPENDKIM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable_opendmarc" class="md-nav__link">
+    ENABLE_OPENDMARC
   </a>
   
 </li>
@@ -2457,6 +2506,13 @@
           <li class="md-nav__item">
   <a href="#enable_pop3" class="md-nav__link">
     ENABLE_POP3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable_clamav" class="md-nav__link">
+    ENABLE_CLAMAV
   </a>
   
 </li>
@@ -2520,13 +2576,6 @@
           <li class="md-nav__item">
   <a href="#virusmails_delete_delay" class="md-nav__link">
     VIRUSMAILS_DELETE_DELAY
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enable_postfix_virtual_transport" class="md-nav__link">
-    ENABLE_POSTFIX_VIRTUAL_TRANSPORT
   </a>
   
 </li>
@@ -3155,13 +3204,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sasl_passwd" class="md-nav__link">
-    SASL_PASSWD
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#saslauthd_ldap_auth_method" class="md-nav__link">
     SASLAUTHD_LDAP_AUTH_METHOD
   </a>
@@ -3341,6 +3383,7 @@
 <li>OIDC =&gt; use OIDC authentication (<strong>not yet implemented</strong>)</li>
 <li>FILE =&gt; use local files (this is used as the default)</li>
 </ul>
+<p>A second container for the ldap service is necessary (e.g. <a href="https://github.com/osixia/docker-openldap">docker-openldap</a>)</p>
 <h5 id="permit_docker"><a class="toclink" href="#permit_docker">PERMIT_DOCKER</a></h5>
 <p>Set different options for mynetworks option (can be overwrite in postfix-main.cf) <strong>WARNING</strong>: Adding the docker network's gateway to the list of trusted hosts, e.g. using the <code>network</code> or <code>connected-networks</code> option, can create an <a href="https://en.wikipedia.org/wiki/Open_mail_relay"><strong>open relay</strong></a>, for instance if IPv6 is enabled on the host machine but not in Docker.</p>
 <ul>
@@ -3353,6 +3396,21 @@
 <p>Note: you probably want to <a href="#postfix_inet_protocols">set <code>POSTFIX_INET_PROTOCOLS=ipv4</code></a> to make it work fine with Docker.</p>
 <h5 id="tz"><a class="toclink" href="#tz">TZ</a></h5>
 <p>Set the timezone. If this variable is unset, the container runtime will try to detect the time using <code>/etc/localtime</code>, which you can alternatively mount into the container. The value of this variable must follow the pattern <code>AREA/ZONE</code>, i.e. of you want to use Germany's time zone, use <code>Europe/Berlin</code>. You can lookup all available timezones <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List">here</a>.</p>
+<h5 id="enable_rspamd"><a class="toclink" href="#enable_rspamd">ENABLE_RSPAMD</a></h5>
+<p>Enable or disable Rspamd.</p>
+<div class="admonition warning">
+<p class="admonition-title">Current State</p>
+<p>Rspamd-support is under active development. Be aware that breaking changes can happen at any time.</p>
+<p>Currently, rspamd is integrated into Postfix as a milter. However, there is no official DKIM/DMARC support for rspamd in DMS as of now (WIP). To get more information, see <a href="../security/rspamd/">the detailed documentation page for Rspamd</a>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Rspamd and DNS Block Lists</p>
+<p>When you use Rspamd, you might want to use the <a href="https://rspamd.com/doc/modules/rbl.html">RBL module</a>. If you do, make sure your DNS resolver is set up correctly (i.e. it should be a non-public recursive resolver). Otherwise, you <a href="https://www.spamhaus.org/faq/section/DNSBL%20Usage#365">might not be able</a> to make use of the block lists.</p>
+</div>
+<ul>
+<li><strong>0</strong> =&gt; disabled</li>
+<li>1 =&gt; enabled</li>
+</ul>
 <h5 id="enable_amavis"><a class="toclink" href="#enable_amavis">ENABLE_AMAVIS</a></h5>
 <p>Amavis content filter (used for ClamAV &amp; SpamAssassin)</p>
 <ul>
@@ -3375,15 +3433,27 @@ and various <a href="https://github.com/docker-mailserver/docker-mailserver/blob
 <li><strong>0</strong> =&gt; DNS block lists are disabled</li>
 <li>1     =&gt; DNS block lists are enabled</li>
 </ul>
-<h5 id="enable_clamav"><a class="toclink" href="#enable_clamav">ENABLE_CLAMAV</a></h5>
+<h5 id="enable_opendkim"><a class="toclink" href="#enable_opendkim">ENABLE_OPENDKIM</a></h5>
+<p>Enables the OpenDKIM service.</p>
 <ul>
-<li><strong>0</strong> =&gt; ClamAV is disabled</li>
-<li>1 =&gt; ClamAV is enabled</li>
+<li><strong>1</strong> =&gt; Enabled</li>
+<li>0 =&gt; Disabled</li>
+</ul>
+<h5 id="enable_opendmarc"><a class="toclink" href="#enable_opendmarc">ENABLE_OPENDMARC</a></h5>
+<p>Enables the OpenDMARC service.</p>
+<ul>
+<li><strong>1</strong> =&gt; Enabled</li>
+<li>0 =&gt; Disabled</li>
 </ul>
 <h5 id="enable_pop3"><a class="toclink" href="#enable_pop3">ENABLE_POP3</a></h5>
 <ul>
 <li><strong>empty</strong> =&gt; POP3 service disabled</li>
 <li>1 =&gt; Enables POP3 service</li>
+</ul>
+<h5 id="enable_clamav"><a class="toclink" href="#enable_clamav">ENABLE_CLAMAV</a></h5>
+<ul>
+<li><strong>0</strong> =&gt; ClamAV is disabled</li>
+<li>1 =&gt; ClamAV is enabled</li>
 </ul>
 <h5 id="enable_fail2ban"><a class="toclink" href="#enable_fail2ban">ENABLE_FAIL2BAN</a></h5>
 <ul>
@@ -3449,20 +3519,14 @@ FAIL2BAN_BLOCKTYPE=drop</li>
 <ul>
 <li><strong>empty</strong> =&gt; 7 days</li>
 </ul>
-<h5 id="enable_postfix_virtual_transport"><a class="toclink" href="#enable_postfix_virtual_transport">ENABLE_POSTFIX_VIRTUAL_TRANSPORT</a></h5>
-<p>This Option is activating the Usage of POSTFIX_DAGENT to specify a ltmp client different from default dovecot socket.</p>
-<ul>
-<li><strong>empty</strong> =&gt; disabled</li>
-<li>1 =&gt; enabled</li>
-</ul>
 <h5 id="postfix_dagent"><a class="toclink" href="#postfix_dagent">POSTFIX_DAGENT</a></h5>
-<p>Enabled by ENABLE_POSTFIX_VIRTUAL_TRANSPORT. Specify the final delivery of postfix</p>
+<p>Configure Postfix <code>virtual_transport</code> to deliver mail to a different LMTP client (<em>default is a unix socket to dovecot</em>).</p>
+<p>Provide any valid URI. Examples:</p>
 <ul>
-<li><strong>empty</strong>: fail</li>
+<li><strong>empty</strong> =&gt; <code>lmtp:unix:/var/run/dovecot/lmtp</code> (default, configured in Postfix <code>main.cf</code>)</li>
 <li><code>lmtp:unix:private/dovecot-lmtp</code> (use socket)</li>
-<li><code>lmtps:inet:&lt;host&gt;:&lt;port&gt;</code> (secure lmtp with starttls, take a look at <a href="https://sys4.de/en/blog/2014/11/17/sicheres-lmtp-mit-starttls-in-dovecot/">https://sys4.de/en/blog/2014/11/17/sicheres-lmtp-mit-starttls-in-dovecot/</a>)</li>
+<li><code>lmtps:inet:&lt;host&gt;:&lt;port&gt;</code> (secure lmtp with starttls)</li>
 <li><code>lmtp:&lt;kopano-host&gt;:2003</code> (use kopano as mailstore)</li>
-<li>etc.</li>
 </ul>
 <h5 id="postfix_mailbox_size_limit"><a class="toclink" href="#postfix_mailbox_size_limit">POSTFIX_MAILBOX_SIZE_LIMIT</a></h5>
 <p>Set the mailbox size limit for all users. If set to zero, the size will be unlimited (default).</p>
@@ -3903,11 +3967,6 @@ Note: this setting needs <code>SPAMASSASSIN_SPAM_TO_INBOX=1</code></p>
 <ul>
 <li><strong>empty</strong> =&gt; Nothing is added to the configuration but the documentation says it is <code>userPassword</code> by default.</li>
 <li>Any value =&gt; Fills the <code>ldap_password_attr</code> option</li>
-</ul>
-<h5 id="sasl_passwd"><a class="toclink" href="#sasl_passwd">SASL_PASSWD</a></h5>
-<ul>
-<li><strong>empty</strong> =&gt; No sasl_passwd will be created</li>
-<li>string =&gt; <code>/etc/postfix/sasl_passwd</code> will be created with the string as password</li>
 </ul>
 <h5 id="saslauthd_ldap_auth_method"><a class="toclink" href="#saslauthd_ldap_auth_method">SASLAUTHD_LDAP_AUTH_METHOD</a></h5>
 <ul>

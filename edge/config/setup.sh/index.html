@@ -720,6 +720,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security/rspamd/" class="md-nav__link">
+        Rspamd
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1383,6 +1397,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../contributing/tests/" class="md-nav__link">
+        Tests
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../contributing/issues-and-pull-requests/" class="md-nav__link">
         Issues and Pull Requests
       </a>
@@ -1552,9 +1580,10 @@ DESCRIPTION
         ./setup.sh debug show-mail-logs
 
 EXAMPLES
-    ./setup.sh email add test@example.com
+    ./setup.sh email add test@example.com [password]
         Add the email account test@example.com. You will be prompted
-        to input a password afterwards since no password was supplied.
+        to input a password afterwards if no password was supplied.
+        When supplying `[password]`, it should be in plaintext.
 
     ./setup.sh config dkim keysize 2048 domain &#39;example.com,not-example.com&#39;
         Creates keys of length 2048 but in an LDAP setup where domains are not known to

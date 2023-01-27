@@ -681,6 +681,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security/rspamd/" class="md-nav__link">
+        Rspamd
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1445,6 +1459,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../contributing/tests/" class="md-nav__link">
+        Tests
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../contributing/issues-and-pull-requests/" class="md-nav__link">
         Issues and Pull Requests
       </a>
@@ -1705,7 +1733,7 @@
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_LDAP_START_TLS=yes</span><span class="w"></span>
 </code></pre></div>
 <h2 id="active-directory-configurations-tested-with-samba4-ad-implementation"><a class="toclink" href="#active-directory-configurations-tested-with-samba4-ad-implementation">Active Directory Configurations (Tested with Samba4 AD Implementation)</a></h2>
-<p>In addition to LDAP explanation above, when Docker Mailserver is intended to be used with Active Directory (or the equivelant implementations like Samba4 AD DC) the following points should be taken into consideration:</p>
+<p>In addition to LDAP explanation above, when Docker Mailserver is intended to be used with Active Directory (or the equivalent implementations like Samba4 AD DC) the following points should be taken into consideration:</p>
 <ul>
 <li>Samba4 Active Directory requires a <strong>secure connection</strong> to the domain controller (DC), either via SSL/TLS (LDAPS) or via StartTLS.</li>
 <li>The username equivalent in Active Directory is: <code>sAMAccountName</code>.</li>
@@ -1755,13 +1783,11 @@ update-ca-certificates
 <h2 id="ldap-setup-examples"><a class="toclink" href="#ldap-setup-examples">LDAP Setup Examples</a></h2>
 <details class="example" open="open">
 <summary>Basic Setup</summary>
-<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.8&#39;</span><span class="w"></span>
-<span class="nt">services</span><span class="p">:</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">services</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">mailserver</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker.io/mailserver/docker-mailserver:latest</span><span class="w"></span>
 <span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mailserver</span><span class="w"></span>
-<span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mail</span><span class="w"></span>
-<span class="w">    </span><span class="nt">domainname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example.com</span><span class="w"></span>
+<span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mail.example.com</span><span class="w"></span>
 
 <span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;25:25&quot;</span><span class="w"></span>
@@ -1809,7 +1835,6 @@ update-ca-certificates
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SASLAUTHD_LDAP_FILTER=(&amp;(mail=%U@example.org)(objectClass=inetOrgPerson))</span><span class="w"></span>
 <span class="w">      </span><span class="c1"># &lt;&lt;&lt; SASL LDAP Authentication</span><span class="w"></span>
 
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ONE_DIR=1</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SSL_TYPE=letsencrypt</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PERMIT_DOCKER=host</span><span class="w"></span>
 
@@ -1819,14 +1844,11 @@ update-ca-certificates
 </details>
 <details class="example">
 <summary>Kopano / Zarafa</summary>
-<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.8&#39;</span><span class="w"></span>
-
-<span class="nt">services</span><span class="p">:</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">services</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">mailserver</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker.io/mailserver/docker-mailserver:latest</span><span class="w"></span>
 <span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mailserver</span><span class="w"></span>
-<span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mail</span><span class="w"></span>
-<span class="w">    </span><span class="nt">domainname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example.com</span><span class="w"></span>
+<span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mail.example.com</span><span class="w"></span>
 
 <span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;25:25&quot;</span><span class="w"></span>
@@ -1868,11 +1890,9 @@ update-ca-certificates
 <span class="w">      </span><span class="c1"># &lt;&lt;&lt; Postfix Ldap Integration</span><span class="w"></span>
 
 <span class="w">      </span><span class="c1"># &gt;&gt;&gt; Kopano Integration</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_POSTFIX_VIRTUAL_TRANSPORT=1</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">POSTFIX_DAGENT=lmtp:kopano:2003</span><span class="w"></span>
 <span class="w">      </span><span class="c1"># &lt;&lt;&lt; Kopano Integration</span><span class="w"></span>
 
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ONE_DIR=1</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SSL_TYPE=letsencrypt</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PERMIT_DOCKER=host</span><span class="w"></span>
 
