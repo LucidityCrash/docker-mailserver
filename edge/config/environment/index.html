@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://docker-mailserver.github.io/docker-mailserver/edge/config/environment/">
       
+      
+        <link rel="prev" href="../../usage/">
+      
+      
+        <link rel="next" href="../user-management/">
+      
       <link rel="icon" href="../../assets/logo/favicon-32x32.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
@@ -23,13 +29,13 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7a7fce14.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
-        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
+
     
     
     
@@ -44,10 +50,11 @@
     
       <link rel="stylesheet" href="../../assets/css/customizations.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -81,10 +88,8 @@
       
     </div>
     
-      <div data-md-component="outdated" hidden>
-        <aside class="md-banner md-banner--warning">
-          
-        </aside>
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
       </div>
     
     
@@ -120,7 +125,6 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          
           <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
@@ -128,7 +132,6 @@
             </label>
           
         
-          
           
           <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
@@ -155,7 +158,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -167,7 +170,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -179,7 +182,7 @@
         <a href="https://github.com/docker-mailserver/docker-mailserver" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     docker-mailserver
@@ -198,7 +201,7 @@
           
             
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
+  <div class="md-grid">
     <ul class="md-tabs__list">
       
         
@@ -228,6 +231,18 @@
         
   
   
+
+
+  <li class="md-tabs__item">
+    <a href="../../usage/" class="md-tabs__link">
+      Usage
+    </a>
+  </li>
+
+      
+        
+  
+  
     
   
 
@@ -236,7 +251,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../setup.sh/" class="md-tabs__link md-tabs__link--active">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         Configuration
       </a>
     </li>
@@ -351,7 +366,7 @@
       <a href="https://github.com/docker-mailserver/docker-mailserver" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     docker-mailserver
@@ -397,6 +412,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../usage/" class="md-nav__link">
+        Usage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -404,36 +434,23 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
       
       
       
-      
-        <label class="md-nav__link" for="__nav_3">
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
           Configuration
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Configuration" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Configuration
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../setup.sh/" class="md-nav__link">
-        Your Best Friend setup.sh
-      </a>
-    </li>
-  
-
-            
           
             
               
@@ -444,7 +461,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
@@ -481,13 +498,6 @@
           <li class="md-nav__item">
   <a href="#override_hostname" class="md-nav__link">
     OVERRIDE_HOSTNAME
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dms_debug" class="md-nav__link">
-    DMS_DEBUG
   </a>
   
 </li>
@@ -535,13 +545,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#enable_rspamd" class="md-nav__link">
-    ENABLE_RSPAMD
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#enable_amavis" class="md-nav__link">
     ENABLE_AMAVIS
   </a>
@@ -572,6 +575,13 @@
           <li class="md-nav__item">
   <a href="#enable_opendmarc" class="md-nav__link">
     ENABLE_OPENDMARC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable_policyd_spf" class="md-nav__link">
+    ENABLE_POLICYD_SPF
   </a>
   
 </li>
@@ -731,6 +741,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#postfix_reject_unknown_client_hostname" class="md-nav__link">
+    POSTFIX_REJECT_UNKNOWN_CLIENT_HOSTNAME
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#postfix_inet_protocols" class="md-nav__link">
     POSTFIX_INET_PROTOCOLS
   </a>
@@ -740,6 +757,68 @@
           <li class="md-nav__item">
   <a href="#dovecot_inet_protocols" class="md-nav__link">
     DOVECOT_INET_PROTOCOLS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move_spam_to_junk" class="md-nav__link">
+    MOVE_SPAM_TO_JUNK
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rspamd" class="md-nav__link">
+    Rspamd
+  </a>
+  
+    <nav class="md-nav" aria-label="Rspamd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_rspamd" class="md-nav__link">
+    ENABLE_RSPAMD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable_rspamd_redis" class="md-nav__link">
+    ENABLE_RSPAMD_REDIS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rspamd_greylisting" class="md-nav__link">
+    RSPAMD_GREYLISTING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rspamd_learn" class="md-nav__link">
+    RSPAMD_LEARN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rspamd_hfilter" class="md-nav__link">
+    RSPAMD_HFILTER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rspamd_hfilter_hostname_unknown_score" class="md-nav__link">
+    RSPAMD_HFILTER_HOSTNAME_UNKNOWN_SCORE
   </a>
   
 </li>
@@ -850,13 +929,6 @@
           <li class="md-nav__item">
   <a href="#enable_spamassassin_kam" class="md-nav__link">
     ENABLE_SPAMASSASSIN_KAM
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#move_spam_to_junk" class="md-nav__link">
-    MOVE_SPAM_TO_JUNK
   </a>
   
 </li>
@@ -1411,57 +1483,10 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3_3">
-          User Management
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="User Management" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_3">
-          <span class="md-nav__icon md-icon"></span>
-          User Management
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../user-management/accounts/" class="md-nav__link">
-        Accounts
+      <a href="../user-management/" class="md-nav__link">
+        User Management
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../user-management/aliases/" class="md-nav__link">
-        Aliases
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -1476,18 +1501,21 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" checked>
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_3_4">
+        <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
           Best Practices
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Best Practices" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_4">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3">
           <span class="md-nav__icon md-icon"></span>
           Best Practices
         </label>
@@ -1499,36 +1527,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../best-practices/dkim/" class="md-nav__link">
-        DKIM
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../best-practices/dmarc/" class="md-nav__link">
-        DMARC
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../best-practices/spf/" class="md-nav__link">
-        SPF
+      <a href="../best-practices/dkim_dmarc_spf/" class="md-nav__link">
+        DKIM, DMARC & SPF
       </a>
     </li>
   
@@ -1565,18 +1565,21 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" checked>
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_3_5">
+        <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
           Security
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Security" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_5">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_4">
           <span class="md-nav__icon md-icon"></span>
           Security
         </label>
@@ -1664,43 +1667,10 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3_6">
-          Troubleshooting
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Troubleshooting" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_6">
-          <span class="md-nav__icon md-icon"></span>
-          Troubleshooting
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../troubleshooting/debugging/" class="md-nav__link">
+      <a href="../debugging/" class="md-nav__link">
         Debugging
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -1725,22 +1695,39 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../setup.sh/" class="md-nav__link">
+        About setup.sh
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_8" type="checkbox" id="__nav_3_8" checked>
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_8" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_3_8">
+        <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
           Advanced Configuration
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Advanced Configuration" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_8">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_8">
           <span class="md-nav__icon md-icon"></span>
           Advanced Configuration
         </label>
@@ -1769,18 +1756,21 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_8_2" type="checkbox" id="__nav_3_8_2" checked>
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_8_2" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_3_8_2">
+        <label class="md-nav__link" for="__nav_4_8_2" id="__nav_4_8_2_label" tabindex="0">
           Maintenance
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Maintenance" data-md-level="3">
-        <label class="md-nav__title" for="__nav_3_8_2">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_8_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_8_2">
           <span class="md-nav__icon md-icon"></span>
           Maintenance
         </label>
@@ -1816,18 +1806,21 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_8_3" type="checkbox" id="__nav_3_8_3" checked>
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_8_3" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_3_8_3">
+        <label class="md-nav__link" for="__nav_4_8_3" id="__nav_4_8_3_label" tabindex="0">
           Override the Default Configs
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Override the Default Configs" data-md-level="3">
-        <label class="md-nav__title" for="__nav_3_8_3">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_8_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_8_3">
           <span class="md-nav__icon md-icon"></span>
           Override the Default Configs
         </label>
@@ -1933,18 +1926,21 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_8_7" type="checkbox" id="__nav_3_8_7" checked>
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_8_7" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_3_8_7">
+        <label class="md-nav__link" for="__nav_4_8_7" id="__nav_4_8_7_label" tabindex="0">
           Email Forwarding
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Email Forwarding" data-md-level="3">
-        <label class="md-nav__title" for="__nav_3_8_7">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_8_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_8_7">
           <span class="md-nav__icon md-icon"></span>
           Email Forwarding
         </label>
@@ -2079,18 +2075,21 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_4">
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
           Examples
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Examples" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Examples
         </label>
@@ -2105,18 +2104,21 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" checked>
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_4_1">
+        <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
           Tutorials
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Tutorials" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_1">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_1">
           <span class="md-nav__icon md-icon"></span>
           Tutorials
         </label>
@@ -2194,18 +2196,21 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_4_2">
+        <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
           Use Cases
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Use Cases" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_2">
           <span class="md-nav__icon md-icon"></span>
           Use Cases
         </label>
@@ -2278,18 +2283,21 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6">
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
           Contributing
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Contributing" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Contributing
         </label>
@@ -2413,13 +2421,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#dms_debug" class="md-nav__link">
-    DMS_DEBUG
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#log_level" class="md-nav__link">
     LOG_LEVEL
   </a>
@@ -2462,13 +2463,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#enable_rspamd" class="md-nav__link">
-    ENABLE_RSPAMD
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#enable_amavis" class="md-nav__link">
     ENABLE_AMAVIS
   </a>
@@ -2499,6 +2493,13 @@
           <li class="md-nav__item">
   <a href="#enable_opendmarc" class="md-nav__link">
     ENABLE_OPENDMARC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable_policyd_spf" class="md-nav__link">
+    ENABLE_POLICYD_SPF
   </a>
   
 </li>
@@ -2658,6 +2659,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#postfix_reject_unknown_client_hostname" class="md-nav__link">
+    POSTFIX_REJECT_UNKNOWN_CLIENT_HOSTNAME
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#postfix_inet_protocols" class="md-nav__link">
     POSTFIX_INET_PROTOCOLS
   </a>
@@ -2667,6 +2675,68 @@
           <li class="md-nav__item">
   <a href="#dovecot_inet_protocols" class="md-nav__link">
     DOVECOT_INET_PROTOCOLS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move_spam_to_junk" class="md-nav__link">
+    MOVE_SPAM_TO_JUNK
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rspamd" class="md-nav__link">
+    Rspamd
+  </a>
+  
+    <nav class="md-nav" aria-label="Rspamd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable_rspamd" class="md-nav__link">
+    ENABLE_RSPAMD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable_rspamd_redis" class="md-nav__link">
+    ENABLE_RSPAMD_REDIS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rspamd_greylisting" class="md-nav__link">
+    RSPAMD_GREYLISTING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rspamd_learn" class="md-nav__link">
+    RSPAMD_LEARN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rspamd_hfilter" class="md-nav__link">
+    RSPAMD_HFILTER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rspamd_hfilter_hostname_unknown_score" class="md-nav__link">
+    RSPAMD_HFILTER_HOSTNAME_UNKNOWN_SCORE
   </a>
   
 </li>
@@ -2777,13 +2847,6 @@
           <li class="md-nav__item">
   <a href="#enable_spamassassin_kam" class="md-nav__link">
     ENABLE_SPAMASSASSIN_KAM
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#move_spam_to_junk" class="md-nav__link">
-    MOVE_SPAM_TO_JUNK
   </a>
   
 </li>
@@ -3332,30 +3395,29 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-  <a href="https://github.com/docker-mailserver/docker-mailserver/edit/master/docs/content/config/environment.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+                  
 
+  
+  
 
 
   <h1>Environment Variables</h1>
 
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Values in <strong>bold</strong> are the default values. If an option doesn't work as documented here, check if you are running the latest image. The current <code>master</code> branch corresponds to the image <code>mailserver/docker-mailserver:edge</code>.</p>
+<p>Values in <strong>bold</strong> are the default values. If an option doesn't work as documented here, check if you are running the latest image. The current <code>master</code> branch corresponds to the image <code>ghcr.io/docker-mailserver/docker-mailserver:edge</code>.</p>
 </div>
 <h4 id="general"><a class="toclink" href="#general">General</a></h4>
 <h5 id="override_hostname"><a class="toclink" href="#override_hostname">OVERRIDE_HOSTNAME</a></h5>
+<p>If you can't set your hostname (<em>eg: you're in a container platform that doesn't let you</em>) specify it via this environment variable. It will have priority over <code>docker run --hostname</code>, or the equivalent <code>hostname:</code> field in <code>docker-compose.yml</code>.</p>
 <ul>
-<li><strong>empty</strong> =&gt; uses the <code>hostname</code> command to get canonical hostname for <code>docker-mailserver</code> to use.</li>
-<li>=&gt; Specify a fully-qualified domainname to serve mail for. This is used for many of the config features so if you can't set your hostname (<em>eg: you're in a container platform that doesn't let you</em>) specify it via this environment variable. It will take priority over <code>docker run</code> options: <code>--hostname</code> and <code>--domainname</code>, or <code>docker-compose.yml</code> config equivalents: <code>hostname:</code> and <code>domainname:</code>.</li>
+<li><strong>empty</strong> =&gt; Uses the <code>hostname -f</code> command to get canonical hostname for DMS to use.</li>
+<li>=&gt; Specify an FQDN (fully-qualified domain name) to serve mail for. The hostname is required for DMS to function correctly.</li>
 </ul>
-<h5 id="dms_debug"><a class="toclink" href="#dms_debug">DMS_DEBUG</a></h5>
-<p><strong>This environment variable was removed in <code>v11.0.0</code>!</strong> Use <code>LOG_LEVEL</code> instead.</p>
 <h5 id="log_level"><a class="toclink" href="#log_level">LOG_LEVEL</a></h5>
 <p>Set the log level for DMS. This is mostly relevant for container startup scripts and change detection event feedback.</p>
 <p>Valid values (in order of increasing verbosity) are: <code>error</code>, <code>warn</code>, <code>info</code>, <code>debug</code> and <code>trace</code>. The default log level is <code>info</code>.</p>
@@ -3396,21 +3458,6 @@
 <p>Note: you probably want to <a href="#postfix_inet_protocols">set <code>POSTFIX_INET_PROTOCOLS=ipv4</code></a> to make it work fine with Docker.</p>
 <h5 id="tz"><a class="toclink" href="#tz">TZ</a></h5>
 <p>Set the timezone. If this variable is unset, the container runtime will try to detect the time using <code>/etc/localtime</code>, which you can alternatively mount into the container. The value of this variable must follow the pattern <code>AREA/ZONE</code>, i.e. of you want to use Germany's time zone, use <code>Europe/Berlin</code>. You can lookup all available timezones <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List">here</a>.</p>
-<h5 id="enable_rspamd"><a class="toclink" href="#enable_rspamd">ENABLE_RSPAMD</a></h5>
-<p>Enable or disable Rspamd.</p>
-<div class="admonition warning">
-<p class="admonition-title">Current State</p>
-<p>Rspamd-support is under active development. Be aware that breaking changes can happen at any time.</p>
-<p>Currently, rspamd is integrated into Postfix as a milter. However, there is no official DKIM/DMARC support for rspamd in DMS as of now (WIP). To get more information, see <a href="../security/rspamd/">the detailed documentation page for Rspamd</a>.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Rspamd and DNS Block Lists</p>
-<p>When you use Rspamd, you might want to use the <a href="https://rspamd.com/doc/modules/rbl.html">RBL module</a>. If you do, make sure your DNS resolver is set up correctly (i.e. it should be a non-public recursive resolver). Otherwise, you <a href="https://www.spamhaus.org/faq/section/DNSBL%20Usage#365">might not be able</a> to make use of the block lists.</p>
-</div>
-<ul>
-<li><strong>0</strong> =&gt; disabled</li>
-<li>1 =&gt; enabled</li>
-</ul>
 <h5 id="enable_amavis"><a class="toclink" href="#enable_amavis">ENABLE_AMAVIS</a></h5>
 <p>Amavis content filter (used for ClamAV &amp; SpamAssassin)</p>
 <ul>
@@ -3426,9 +3473,12 @@
 <li>3/4/5    =&gt; log debug information (very verbose)</li>
 </ul>
 <h5 id="enable_dnsbl"><a class="toclink" href="#enable_dnsbl">ENABLE_DNSBL</a></h5>
-<p>This enables the <a href="https://www.spamhaus.org/zen/">zen.spamhaus.org</a> DNS block list in postfix
-and various <a href="https://github.com/docker-mailserver/docker-mailserver/blob/f7465a50888eef909dbfc01aff4202b9c7d8bc00/target/postfix/main.cf#L58-L66">lists</a> in postscreen.</p>
-<p>Note: Emails will be rejected, if they don't pass the block list checks!</p>
+<p>This enables DNS block lists in <em>Postscreen</em>. If you want to know which lists we are using, have a look at <a href="https://github.com/docker-mailserver/docker-mailserver/blob/master/target/postfix/main.cf">the default <code>main.cf</code> for Postfix we provide</a> and search for <code>postscreen_dnsbl_sites</code>.</p>
+<div class="admonition danger">
+<p class="admonition-title">A Warning On DNS Block Lists</p>
+<p>Make sure your DNS queries are properly resolved, i.e. you will most likely not want to use a public DNS resolver as these queries do not return meaningful results. We try our best to only evaluate proper return codes - this is not a guarantee that all codes are handled fine though.</p>
+<p><strong>Note that emails will be rejected if they don't pass the block list checks!</strong></p>
+</div>
 <ul>
 <li><strong>0</strong> =&gt; DNS block lists are disabled</li>
 <li>1     =&gt; DNS block lists are enabled</li>
@@ -3444,6 +3494,12 @@ and various <a href="https://github.com/docker-mailserver/docker-mailserver/blob
 <ul>
 <li><strong>1</strong> =&gt; Enabled</li>
 <li>0 =&gt; Disabled</li>
+</ul>
+<h5 id="enable_policyd_spf"><a class="toclink" href="#enable_policyd_spf">ENABLE_POLICYD_SPF</a></h5>
+<p>Enabled <code>policyd-spf</code> in Postfix's configuration. You will likely want to set this to <code>0</code> in case you're using Rspamd (<a href="#enable_rspamd"><code>ENABLE_RSPAMD=1</code></a>).</p>
+<ul>
+<li>0 =&gt; Disabled</li>
+<li><strong>1</strong> =&gt; Enabled</li>
 </ul>
 <h5 id="enable_pop3"><a class="toclink" href="#enable_pop3">ENABLE_POP3</a></h5>
 <ul>
@@ -3462,7 +3518,7 @@ and various <a href="https://github.com/docker-mailserver/docker-mailserver/blob
 </ul>
 <p>If you enable Fail2Ban, don't forget to add the following lines to your <code>docker-compose.yml</code>:</p>
 <div class="highlight"><pre><span></span><code>cap_add:
-  - NET_ADMIN
+<span class="w">  </span>-<span class="w"> </span>NET_ADMIN
 </code></pre></div>
 <p>Otherwise, <code>nftables</code> won't be able to ban IPs.</p>
 <h5 id="fail2ban_blocktype"><a class="toclink" href="#fail2ban_blocktype">FAIL2BAN_BLOCKTYPE</a></h5>
@@ -3500,11 +3556,11 @@ FAIL2BAN_BLOCKTYPE=drop</li>
 <h5 id="spoof_protection"><a class="toclink" href="#spoof_protection">SPOOF_PROTECTION</a></h5>
 <p>Configures the handling of creating mails with forged sender addresses.</p>
 <ul>
-<li><strong>empty</strong> =&gt; Mail address spoofing allowed. Any logged in user may create email messages with a forged sender address. See also <a href="https://en.wikipedia.org/wiki/Email_spoofing">Wikipedia</a>(not recommended, but default for backwards compatibility reasons)</li>
-<li>1 =&gt; (recommended) Mail spoofing denied. Each user may only send with his own or his alias addresses. Addresses with <a href="http://www.postfix.org/postconf.5.html#recipient_delimiter">extension delimiters</a> are not able to send messages.</li>
+<li><strong>0</strong> =&gt; (not recommended) Mail address spoofing allowed. Any logged in user may create email messages with a <a href="https://en.wikipedia.org/wiki/Email_spoofing">forged sender address</a>.</li>
+<li>1 =&gt; Mail spoofing denied. Each user may only send with his own or his alias addresses. Addresses with <a href="http://www.postfix.org/postconf.5.html#recipient_delimiter">extension delimiters</a> are not able to send messages.</li>
 </ul>
 <h5 id="enable_srs"><a class="toclink" href="#enable_srs">ENABLE_SRS</a></h5>
-<p>Enables the Sender Rewriting Scheme. SRS is needed if <code>docker-mailserver</code> acts as forwarder. See <a href="https://github.com/roehling/postsrsd/blob/master/README.md#sender-rewriting-scheme-crash-course">postsrsd</a> for further explanation.</p>
+<p>Enables the Sender Rewriting Scheme. SRS is needed if DMS acts as forwarder. See <a href="https://github.com/roehling/postsrsd/blob/master/README.md#sender-rewriting-scheme-crash-course">postsrsd</a> for further explanation.</p>
 <ul>
 <li><strong>0</strong> =&gt; Disabled</li>
 <li>1 =&gt; Enabled</li>
@@ -3538,7 +3594,7 @@ FAIL2BAN_BLOCKTYPE=drop</li>
 <li><strong>1</strong> =&gt; Dovecot quota is enabled</li>
 <li>0 =&gt; Dovecot quota is disabled</li>
 </ul>
-<p>See <a href="../user-management/accounts/#notes">mailbox quota</a>.</p>
+<p>See <a href="../user-management/#quotas">mailbox quota</a>.</p>
 <h5 id="postfix_message_size_limit"><a class="toclink" href="#postfix_message_size_limit">POSTFIX_MESSAGE_SIZE_LIMIT</a></h5>
 <p>Set the message size limit for all users. If set to zero, the size will be unlimited (not recommended!)</p>
 <ul>
@@ -3584,6 +3640,12 @@ ClamAV must be enabled (ENABLE_CLAMAV=1) for this.</p>
 <li>mdbox ==&gt; (experimental) uses Dovecot high-performance mailbox format, multiple messages per file and multiple files per box</li>
 </ul>
 <p>This option has been added in November 2019. Using other format than Maildir is considered as experimental in docker-mailserver and should only be used for testing purpose. For more details, please refer to <a href="https://wiki2.dovecot.org/MailboxFormat">Dovecot Documentation</a>.</p>
+<h5 id="postfix_reject_unknown_client_hostname"><a class="toclink" href="#postfix_reject_unknown_client_hostname">POSTFIX_REJECT_UNKNOWN_CLIENT_HOSTNAME</a></h5>
+<p>If enabled, employs <code>reject_unknown_client_hostname</code> to sender restrictions in Postfix's configuration.</p>
+<ul>
+<li><strong>0</strong> =&gt; Disabled</li>
+<li>1 =&gt; Enabled</li>
+</ul>
 <h5 id="postfix_inet_protocols"><a class="toclink" href="#postfix_inet_protocols">POSTFIX_INET_PROTOCOLS</a></h5>
 <ul>
 <li><strong>all</strong> =&gt; Listen on all interfaces.</li>
@@ -3598,6 +3660,68 @@ ClamAV must be enabled (ENABLE_CLAMAV=1) for this.</p>
 <li>ipv6 =&gt; Listen only on IPv6 interfaces.</li>
 </ul>
 <p>Note: More information at <a href="https://dovecot.org/doc/dovecot-example.conf">https://dovecot.org/doc/dovecot-example.conf</a></p>
+<h5 id="move_spam_to_junk"><a class="toclink" href="#move_spam_to_junk">MOVE_SPAM_TO_JUNK</a></h5>
+<p>When enabled, e-mails marked with the</p>
+<ol>
+<li><code>X-Spam: Yes</code> header added by Rspamd</li>
+<li><code>X-Spam-Flag: YES</code> header added by SpamAssassin (requires <a href="#spamassassin_spam_to_inbox"><code>SPAMASSASSIN_SPAM_TO_INBOX=1</code></a>)</li>
+</ol>
+<p>will be automatically moved to the Junk folder (with the help of a Sieve script).</p>
+<ul>
+<li>0 =&gt; Spam messages will be delivered in the mailbox.</li>
+<li><strong>1</strong> =&gt; Spam messages will be delivered in the <code>Junk</code> folder.</li>
+</ul>
+<h4 id="rspamd"><a class="toclink" href="#rspamd">Rspamd</a></h4>
+<h5 id="enable_rspamd"><a class="toclink" href="#enable_rspamd">ENABLE_RSPAMD</a></h5>
+<p>Enable or disable <a href="../security/rspamd/">Rspamd</a>.</p>
+<ul>
+<li><strong>0</strong> =&gt; disabled</li>
+<li>1 =&gt; enabled</li>
+</ul>
+<h5 id="enable_rspamd_redis"><a class="toclink" href="#enable_rspamd_redis">ENABLE_RSPAMD_REDIS</a></h5>
+<p>Explicit control over running a Redis instance within the container. By default, this value will match what is set for <a href="#enable_rspamd"><code>ENABLE_RSPAMD</code></a>.</p>
+<p>The purpose of this setting is to opt-out of starting an internal Redis instance when enabling Rspamd, replacing it with your own external instance.</p>
+<details class="note">
+<summary>Configuring Rspamd for an external Redis instance</summary>
+<p>You will need to <a href="https://rspamd.com/doc/configuration/redis.html">provide configuration</a> at <code>/etc/rspamd/local.d/redis.conf</code> similar to:</p>
+<div class="highlight"><pre><span></span><code>servers = &quot;redis.example.test:6379&quot;;
+expand_keys = true;
+</code></pre></div>
+</details>
+<ul>
+<li>0 =&gt; Disabled</li>
+<li>1 =&gt; Enabled</li>
+</ul>
+<h5 id="rspamd_greylisting"><a class="toclink" href="#rspamd_greylisting">RSPAMD_GREYLISTING</a></h5>
+<p>Controls whether the <a href="https://rspamd.com/doc/modules/greylisting.html">Rspamd Greylisting module</a> is enabled. This module can further assist in avoiding spam emails by <a href="https://en.wikipedia.org/wiki/Greylisting_(email)">greylisting</a> e-mails with a certain spam score.</p>
+<ul>
+<li><strong>0</strong> =&gt; Disabled</li>
+<li>1 =&gt; Enabled</li>
+</ul>
+<h5 id="rspamd_learn"><a class="toclink" href="#rspamd_learn">RSPAMD_LEARN</a></h5>
+<p>When enabled,</p>
+<ol>
+<li>the "<a href="https://rspamd.com/doc/configuration/statistic.html#autolearning">autolearning</a>" feature is turned on;</li>
+<li>the Bayes classifier will be trained when moving mails from or to the Junk folder (with the help of Sieve scripts).</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>As of now, the spam learning database is global (i.e. available to all users). If one user deliberately trains it with malicious data, then it will ruin your detection rate.</p>
+<p>This feature is suitably only for users who can tell ham from spam and users that can be trusted.</p>
+</div>
+<ul>
+<li><strong>0</strong> =&gt; Disabled</li>
+<li>1 =&gt; Enabled</li>
+</ul>
+<h5 id="rspamd_hfilter"><a class="toclink" href="#rspamd_hfilter">RSPAMD_HFILTER</a></h5>
+<p>Can be used to enable or disable the <a href="https://www.rspamd.com/doc/modules/hfilter.html">Hfilter group module</a>. This is used by DMS to adjust the <code>HFILTER_HOSTNAME_UNKNOWN</code> symbol, increasing it's default weight to act similar to Postfix's <code>reject_unknown_client_hostname</code>, without the need to outright reject a message.</p>
+<ul>
+<li>0 =&gt; Disabled</li>
+<li><strong>1</strong> =&gt; Enabled</li>
+</ul>
+<h5 id="rspamd_hfilter_hostname_unknown_score"><a class="toclink" href="#rspamd_hfilter_hostname_unknown_score">RSPAMD_HFILTER_HOSTNAME_UNKNOWN_SCORE</a></h5>
+<p>Can be used to control the score when the <a href="#rspamd_hfilter"><code>HFILTER_HOSTNAME_UNKNOWN</code> symbol</a> applies. A higher score is more punishing. Setting it to 15 (the default score for rejecting an e-mail) is equivalent to rejecting the email when the check fails.</p>
+<p>Default: 6 (which corresponds to the <code>add_header</code> action)</p>
 <h4 id="reports"><a class="toclink" href="#reports">Reports</a></h4>
 <h5 id="pflogsumm_trigger"><a class="toclink" href="#pflogsumm_trigger">PFLOGSUMM_TRIGGER</a></h5>
 <p>Enables regular Postfix log summary ("pflogsumm") mail reports.</p>
@@ -3685,13 +3809,6 @@ If this is not set and reports are enabled with the old options, logrotate will 
 <li><strong>0</strong> =&gt; KAM disabled</li>
 <li>1 =&gt; KAM enabled</li>
 </ul>
-<h5 id="move_spam_to_junk"><a class="toclink" href="#move_spam_to_junk">MOVE_SPAM_TO_JUNK</a></h5>
-<p>Spam messages can be moved in the Junk folder.
-Note: this setting needs <code>SPAMASSASSIN_SPAM_TO_INBOX=1</code></p>
-<ul>
-<li>0 =&gt; Spam messages will be delivered in the mailbox.</li>
-<li><strong>1</strong> =&gt; Spam messages will be delivered in the <code>Junk</code> folder.</li>
-</ul>
 <h5 id="sa_tag"><a class="toclink" href="#sa_tag">SA_TAG</a></h5>
 <ul>
 <li><strong>2.0</strong> =&gt; add spam info headers if at, or above that level</li>
@@ -3704,11 +3821,11 @@ Note: this setting needs <code>SPAMASSASSIN_SPAM_TO_INBOX=1</code></p>
 <p>Note: this SpamAssassin setting needs <code>ENABLE_SPAMASSASSIN=1</code></p>
 <h5 id="sa_kill"><a class="toclink" href="#sa_kill">SA_KILL</a></h5>
 <ul>
-<li><strong>6.31</strong> =&gt; triggers spam evasive actions</li>
+<li><strong>10.0</strong> =&gt; triggers spam evasive actions</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">This SpamAssassin setting needs <code>ENABLE_SPAMASSASSIN=1</code></p>
-<p>By default, <code>docker-mailserver</code> is configured to quarantine spam emails.</p>
+<p>By default, DMS is configured to quarantine spam emails.</p>
 <p>If emails are quarantined, they are compressed and stored in a location dependent on the <code>ONE_DIR</code> setting above. To inhibit this behaviour and deliver spam emails, set this to a very high value e.g. <code>100.0</code>.</p>
 <p>If <code>ONE_DIR=1</code> (default) the location is <code>/var/mail-state/lib-amavis/virusmails/</code>, or if <code>ONE_DIR=0</code>: <code>/var/lib/amavis/virusmails/</code>. These paths are inside the docker container.</p>
 </div>
@@ -3755,7 +3872,7 @@ Note: this setting needs <code>SPAMASSASSIN_SPAM_TO_INBOX=1</code></p>
 <ul>
 <li><strong>empty</strong> =&gt; mail.example.com</li>
 <li>=&gt; Specify the dns-name/ip-address where the ldap-server is listening, or an URI like <code>ldaps://mail.example.com</code></li>
-<li>NOTE: If you going to use <code>docker-mailserver</code> in combination with <code>docker-compose.yml</code> you can set the service name here</li>
+<li>NOTE: If you going to use DMS in combination with <code>docker-compose.yml</code> you can set the service name here</li>
 </ul>
 <h5 id="ldap_search_base"><a class="toclink" href="#ldap_search_base">LDAP_SEARCH_BASE</a></h5>
 <ul>
@@ -4039,56 +4156,25 @@ you to replace both instead of just the envelope sender.</p>
 <li>password for default relay user</li>
 </ul>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Back to top
-          </a>
+          </button>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../setup.sh/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Your Best Friend setup.sh" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Your Best Friend setup.sh
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../user-management/accounts/" class="md-footer__link md-footer__link--next" aria-label="Next: Accounts" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Accounts
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -4114,10 +4200,11 @@ you to replace both instead of just the envelope sender.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.expand", "navigation.instant", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.expand", "navigation.instant", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.407015b8.min.js"></script>
       
     
   </body>
